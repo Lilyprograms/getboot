@@ -1,0 +1,7 @@
+*{
+    margin: 0px; box-sizing: border-box;
+}
+nav{background-color: #7952b3;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.nav-sec1{display: flex;justify-content: center; align-items: center;} 
