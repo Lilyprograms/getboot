@@ -18,3 +18,9 @@ nav{background-color: #7952b3; height: 60px; font-size: 0.9rem; font-weight: lig
 button{
     background-color: transparent; border: 1px solid wheat;
 }
+.first{
+    display: flex;
+}
+.first1{
+    margin-left: 10%;
+}
