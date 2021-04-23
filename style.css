@@ -1,7 +1,20 @@
 *{
     margin: 0px; box-sizing: border-box;
 }
-nav{background-color: #7952b3;
-    display: flex; justify-content: space-between; align-items: center;
+nav{background-color: #7952b3; height: 60px; font-size: 0.9rem; font-weight: lighter;
+    display: flex; justify-content: space-between; align-items: center; font-family: Arial, Helvetica, sans-serif;
 }
-.nav-sec1{display: flex;justify-content: center; align-items: center;} 
+.nav-sec1{color:white;display: flex;justify-content: center; align-items: center;} 
+.nav-sec1 a{text-decoration: none;}
+.nav-sec1 a li{
+    list-style: none; color: white; margin: 5px; padding: 5px;
+}
+.nav-sec1 img{width: 40px; margin-left: 15%;}
+.nav-sec1 a{text-decoration: none;}
+.nav-sec2{padding: 30px;width: 20%;}
+.nav-img1{ 
+    width: 20px;
+}
+button{
+    background-color: transparent; border: 1px solid wheat;
+}

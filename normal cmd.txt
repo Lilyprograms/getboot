@@ -1,0 +1,300 @@
+        new file:   index.html
+        new file:   style.css
+
+
+C:\Users\user\Desktop\coding\git>git commit -m
+error: switch `m' requires a value
+
+C:\Users\user\Desktop\coding\git>git commit -m "Added index and style file"
+[master (root-commit) c3898e4] Added index and style file
+ 2 files changed, 2 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+C:\Users\user\Desktop\coding\git>git add index.html
+
+C:\Users\user\Desktop\coding\git>git commit -m "Added title"
+[master 2ee34b6] Added title
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+
+C:\Users\user\Desktop\coding\git>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\user\Desktop\coding\git>git add .
+
+C:\Users\user\Desktop\coding\git>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   style.css
+
+
+C:\Users\user\Desktop\coding\git>git commit -m "Add style to the nav created htm
+l"
+[master 3c8432c] Add style to the nav created html
+ 2 files changed, 38 insertions(+), 2 deletions(-)
+
+C:\Users\user\Desktop\coding\git>git log
+commit 3c8432cb8f64d68df27b1cc5ab9857c097c8fc2e (HEAD -> master)
+Author: ligzandra <alexandramary@outlook.it>
+Date:   Wed Apr 21 11:32:58 2021 +0100
+
+    Add style to the nav created html
+
+commit 2ee34b63979cb7c16ecc88aadf92e11d33ccf900
+Author: ligzandra <alexandramary@outlook.it>
+Date:   Wed Apr 21 11:04:38 2021 +0100
+
+    Added title
+
+commit c3898e4304f0238d4e2c01f5a8f4289bca217c18
+Author: ligzandra <alexandramary@outlook.it>
+Date:   Wed Apr 21 10:59:29 2021 +0100
+
+    Added index and style file
+
+C:\Users\user\Desktop\coding\git>git checkout
+
+C:\Users\user\Desktop\coding\git>git checkout 2ee34b63979cb7c16ecc88aadf92e11d33
+ccf900
+Note: switching to '2ee34b63979cb7c16ecc88aadf92e11d33ccf900'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 2ee34b6 Added title
+
+C:\Users\user\Desktop\coding\git>git log --oneline
+2ee34b6 (HEAD) Added title
+c3898e4 Added index and style file
+
+C:\Users\user\Desktop\coding\git>git master
+git: 'master' is not a git command. See 'git --help'.
+
+The most similar command is
+        restore
+
+C:\Users\user\Desktop\coding\git>git checkout master
+Previous HEAD position was 2ee34b6 Added title
+Switched to branch 'master'
+
+C:\Users\user\Desktop\coding\git>git log
+commit 3c8432cb8f64d68df27b1cc5ab9857c097c8fc2e (HEAD -> master)
+Author: ligzandra <alexandramary@outlook.it>
+Date:   Wed Apr 21 11:32:58 2021 +0100
+
+    Add style to the nav created html
+
+commit 2ee34b63979cb7c16ecc88aadf92e11d33ccf900
+Author: ligzandra <alexandramary@outlook.it>
+Date:   Wed Apr 21 11:04:38 2021 +0100
+
+    Added title
+
+commit c3898e4304f0238d4e2c01f5a8f4289bca217c18
+Author: ligzandra <alexandramary@outlook.it>
+Date:   Wed Apr 21 10:59:29 2021 +0100
+
+    Added index and style file
+
+C:\Users\user\Desktop\coding\git>git branch -a
+* master
+
+C:\Users\user\Desktop\coding\git>git branch Add-form
+
+C:\Users\user\Desktop\coding\git>git branch -a
+  Add-form
+* master
+
+C:\Users\user\Desktop\coding\git>git checkout Add-form
+Switched to branch 'Add-form'
+M       index.html
+M       style.css
+
+C:\Users\user\Desktop\coding\git>git branch -a
+* Add-form
+  master
+
+C:\Users\user\Desktop\coding\git>git add .
+
+C:\Users\user\Desktop\coding\git>git status
+On branch Add-form
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        modified:   style.css
+
+
+C:\Users\user\Desktop\coding\git>git commit -m "added a form"
+[Add-form 4325999] added a form
+ 3 files changed, 66 insertions(+), 26 deletions(-)
+ create mode 100644 .gitignore
+ rewrite style.css (65%)
+
+C:\Users\user\Desktop\coding\git>git checkout master
+Switched to branch 'master'
+
+C:\Users\user\Desktop\coding\git>git checkout Add-form
+Switched to branch 'Add-form'
+
+C:\Users\user\Desktop\coding\git>git checkout master
+error: Your local changes to the following files would be overwritten by checkou
+t:
+        style.css
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+C:\Users\user\Desktop\coding\git>git add .
+
+C:\Users\user\Desktop\coding\git>git commit -m "Form width styling"
+[Add-form f476e6e] Form width styling
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\user\Desktop\coding\git>git status
+On branch Add-form
+nothing to commit, working tree clean
+
+C:\Users\user\Desktop\coding\git>git branch -a
+* Add-form
+  master
+
+C:\Users\user\Desktop\coding\git>git checkout master
+Switched to branch 'master'
+
+C:\Users\user\Desktop\coding\git>git branch dummy
+
+C:\Users\user\Desktop\coding\git>git branch -a
+  Add-form
+  dummy
+* master
+
+C:\Users\user\Desktop\coding\git>git checkout dummy
+Switched to branch 'dummy'
+
+C:\Users\user\Desktop\coding\git>git add .
+
+C:\Users\user\Desktop\coding\git>git status
+On branch dummy
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        new file:   index.js
+
+
+C:\Users\user\Desktop\coding\git>git commit -m
+error: switch `m' requires a value
+
+C:\Users\user\Desktop\coding\git>git commit -m "added dummy lorem"
+[dummy 6810ea5] added dummy lorem
+ 2 files changed, 2 insertions(+)
+ create mode 100644 index.js
+
+C:\Users\user\Desktop\coding\git>git branch dummy -d
+error: Cannot delete branch 'dummy' checked out at 'C:/Users/user/Desktop/coding
+/git'
+
+C:\Users\user\Desktop\coding\git>git checkout master
+Switched to branch 'master'
+
+C:\Users\user\Desktop\coding\git>git branch dummy -d
+error: The branch 'dummy' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D dummy'.
+
+C:\Users\user\Desktop\coding\git>git branch -D dummy
+Deleted branch dummy (was 6810ea5).
+
+C:\Users\user\Desktop\coding\git>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\user\Desktop\coding\git>git merge dummy
+merge: dummy - not something we can merge
+
+C:\Users\user\Desktop\coding\git>git merge Add-form
+Updating 3c8432c..f476e6e
+Fast-forward
+ .gitignore |  1 +
+ index.html | 28 ++++++++++++++++++++++++++--
+ style.css  | 25 ++++++++++++++++++++-----
+ 3 files changed, 47 insertions(+), 7 deletions(-)
+ create mode 100644 .gitignore
+
+C:\Users\user\Desktop\coding\git>git log oneline
+fatal: ambiguous argument 'oneline': unknown revision or path not in the working
+ tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+C:\Users\user\Desktop\coding\git>git log --oneline
+f476e6e (HEAD -> master, Add-form) Form width styling
+4325999 added a form
+3c8432c Add style to the nav created html
+2ee34b6 Added title
+c3898e4 Added index and style file
+
+C:\Users\user\Desktop\coding\git>git branch -a
+  Add-form
+* master
+
+C:\Users\user\Desktop\coding\git>git branch set-conflict
+
+C:\Users\user\Desktop\coding\git>git checkout set-conflict
+Switched to branch 'set-conflict'
+
+C:\Users\user\Desktop\coding\git>git add .
+
+C:\Users\user\Desktop\coding\git>git commit -m "added padding to body"
+[set-conflict 4f13e60] added padding to body
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\user\Desktop\coding\git>git checkout master
+Switched to branch 'master'
+
+C:\Users\user\Desktop\coding\git>git add .
+
+C:\Users\user\Desktop\coding\git>git commit -m "added color to body"
+[master baa7ca9] added color to body
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\user\Desktop\coding\git>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\user\Desktop\coding\git>git merge set-conflict
+Auto-merging style.css
+CONFLICT (content): Merge conflict in style.css
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\user\Desktop\coding\git>git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\user\Desktop\coding\git>git add .
+
+C:\Users\user\Desktop\coding\git>git commit
+[master 87e16b4] Merge branch 'set-conflict'
+
+C:\Users\user\Desktop\coding\git>
