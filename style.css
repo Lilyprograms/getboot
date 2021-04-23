@@ -24,3 +24,6 @@ button{
 .first1{
     margin-left: 10%;
 }
+.first1 h1{
+    font-size: medium; font-weight: bolder;
+}
